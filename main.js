@@ -1,14 +1,11 @@
-const todaysDate = () => {
-    console.log(new Date());
-    };
-    todaysDate();
-    
-    
-    const isSqaured = (x) => {
-        let root = Math.sqrt(x);
-        return root % 1 == 0;
-    };
-    console.log(isSqaured(10));
-    console.log(isSqaured(9));
-    
-    
+const fibbonaci10 = () => {
+    let nums = [0, 1];
+
+    for (let i = 2; i < 10; i++) {
+        let num = nums[i-1] + nums[i-2];
+        nums.push(num);
+    }
+    return nums;
+};
+
+console.log(fibbonaci10());
